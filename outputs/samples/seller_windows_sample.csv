@@ -1,0 +1,201 @@
+seller_ref,current_state,rec_band,backup_band_1,backup_band_2,rec_day_offset,p_meeting,p_answer,confidence,reason_code,next_call_at
+s_1a37225fa0,Not Interested,19-20,11-12,17-18,14.0,0.29,0.6859,med,segment_level,2026-10-01T19:00:00
+s_5e6a01a43f,Not Interested,19-20,11-12,17-18,14.0,0.131,0.6111,med,global_curve,2026-10-01T19:00:00
+s_6930c6c5b3,Not Interested,19-20,11-12,17-18,14.0,0.0779,0.6375,med,segment_level,2026-10-01T19:00:00
+s_f5213d4ad7,General,19-20,11-12,9-10,5.0,0.1025,0.6219,med,segment_level,2026-10-01T19:00:00
+s_d6260468b8,General,19-20,11-12,17-18,5.0,0.0806,0.6282,med,segment_level,2026-10-01T19:00:00
+s_45d93dd9dc,General,19-20,11-12,17-18,5.0,0.1443,0.6262,low,segment_level,2026-10-01T19:00:00
+s_3f4d1a6a02,Not Answered,19-20,11-12,17-18,0.0,0.2761,0.6665,med,segment_level,2026-10-01T19:00:00
+s_4a5717d119,Not Answered,19-20,11-12,17-18,0.0,0.1048,0.5979,low,segment_level,2026-10-01T19:00:00
+s_bf28d72912,Not Interested,19-20,11-12,17-18,14.0,0.0548,0.6516,med,segment_level,2026-10-01T19:00:00
+s_408c35cac5,Not Answered,19-20,11-12,17-18,0.0,0.3889,0.6811,high,segment_level,2026-10-01T19:00:00
+s_e69945ec2a,Call Later,19-20,11-12,17-18,0.0,0.1523,0.6388,low,segment_level,2026-10-01T19:00:00
+s_c7bb5583e1,Not Answered,19-20,11-12,17-18,0.0,0.1184,0.6817,low,global_curve,2026-10-01T19:00:00
+s_3f9a8765ad,Not Interested,19-20,11-12,17-18,14.0,0.1108,0.6449,med,segment_level,2026-10-01T19:00:00
+s_0cb22f530d,Meeting Fixed,19-20,11-12,17-18,,0.1163,0.6088,low,segment_level,
+s_cb466d9db9,General,19-20,11-12,17-18,5.0,0.2969,0.6976,med,segment_level,2026-10-01T19:00:00
+s_6d55cfc72b,Not Interested,19-20,11-12,17-18,14.0,0.0333,0.5941,med,segment_level,2026-10-01T19:00:00
+s_01e5932e87,Not Interested,19-20,11-12,17-18,14.0,0.552,0.7889,high,segment_level,2026-10-01T19:00:00
+s_16fc476c8b,Not Interested,19-20,11-12,17-18,14.0,0.0858,0.5926,med,segment_level,2026-10-01T19:00:00
+s_752a624d08,Not Interested,19-20,11-12,9-10,14.0,0.087,0.6008,med,segment_level,2026-10-01T19:00:00
+s_3895ab19c7,General,19-20,11-12,17-18,5.0,0.1694,0.7192,med,segment_level,2026-10-01T19:00:00
+s_3ed89a6dff,Not Interested,19-20,17-18,9-10,14.0,0.0842,0.6087,med,segment_level,2026-10-01T19:00:00
+s_2fe4a6ca0b,Not Answered,19-20,11-12,17-18,0.0,0.1313,0.659,med,global_curve,2026-10-01T19:00:00
+s_c4944387a8,Not Interested,19-20,11-12,9-10,14.0,0.1189,0.6915,med,global_curve,2026-10-01T19:00:00
+s_b8399bc693,Meeting Fixed,19-20,11-12,17-18,,0.0638,0.6232,low,segment_level,
+s_2d97169a15,Meeting Fixed,19-20,11-12,17-18,,0.1567,0.6964,med,segment_level,
+s_a7453c33b3,Not Interested,19-20,11-12,9-10,14.0,0.0534,0.5827,med,segment_level,2026-10-01T19:00:00
+s_9ebf6a8d9b,Not Interested,19-20,11-12,17-18,14.0,0.2164,0.6861,med,segment_level,2026-10-01T19:00:00
+s_2f5cb3cc77,Not Answered,19-20,11-12,17-18,0.0,0.1093,0.6863,low,segment_level,2026-10-01T19:00:00
+s_f7cb03c6e2,Not Interested,19-20,11-12,17-18,14.0,0.1062,0.6904,med,segment_level,2026-10-01T19:00:00
+s_2314c429c1,Not Interested,19-20,11-12,17-18,14.0,0.0782,0.6439,med,segment_level,2026-10-01T19:00:00
+s_f1c62c651d,General,19-20,11-12,17-18,5.0,0.0895,0.6887,med,segment_level,2026-10-01T19:00:00
+s_181d1cb796,General,19-20,11-12,17-18,5.0,0.0792,0.6377,low,segment_level,2026-10-04T19:00:00
+s_d0c0c2665c,Meeting Fixed,19-20,11-12,17-18,,0.0785,0.6052,med,segment_level,
+s_acc36db40a,Call Later,19-20,11-12,17-18,0.0,0.0751,0.5766,low,segment_level,2026-10-01T19:00:00
+s_1f5990fd8c,Not Interested,11-12,17-18,9-10,14.0,0.0592,0.6165,med,segment_level,2026-10-01T11:00:00
+s_0a1afc9cbc,Not Answered,19-20,11-12,17-18,0.0,0.1202,0.6736,low,global_curve,2026-10-01T19:00:00
+s_6964e1fc22,Not Interested,19-20,11-12,9-10,14.0,0.2519,0.6696,med,segment_level,2026-10-01T19:00:00
+s_78296f272d,Call Later,19-20,11-12,17-18,0.0,0.0925,0.5987,med,segment_level,2026-10-01T19:00:00
+s_8b872e278d,Not Answered,19-20,11-12,17-18,0.0,0.0986,0.6182,med,segment_level,2026-10-01T19:00:00
+s_1db4761e92,Meeting Fixed,11-12,19-20,17-18,,0.2331,0.7253,med,global_curve,
+s_96cf440f87,Call Later,19-20,11-12,17-18,0.0,0.1058,0.6423,med,segment_level,2026-10-01T19:00:00
+s_b6a649b65b,General,19-20,11-12,17-18,5.0,0.1913,0.7108,low,segment_level,2026-10-01T19:00:00
+s_289e263c68,Not Interested,19-20,11-12,17-18,14.0,0.089,0.6709,med,segment_level,2026-10-01T19:00:00
+s_55c38e3fad,Not Answered,19-20,11-12,17-18,0.0,0.1081,0.5721,low,segment_level,2026-10-01T19:00:00
+s_e7413c95df,Not Answered,19-20,11-12,17-18,0.0,0.1595,0.6449,med,segment_level,2026-10-01T19:00:00
+s_2e6ea7c190,Meeting Fixed,19-20,11-12,17-18,,0.2236,0.6398,med,segment_level,
+s_1740a7b8db,Not Interested,19-20,11-12,9-10,14.0,0.0936,0.6118,high,segment_level,2026-10-14T19:00:00
+s_20a421d45d,Not Interested,11-12,17-18,9-10,14.0,0.0462,0.573,med,segment_level,2026-10-01T11:00:00
+s_d830f84db1,General,19-20,11-12,17-18,5.0,0.1093,0.6277,med,segment_level,2026-10-01T19:00:00
+s_61542ec504,Not Interested,19-20,11-12,17-18,14.0,0.2152,0.6914,med,segment_level,2026-10-01T19:00:00
+s_09e10ddda7,Meeting Fixed,19-20,11-12,17-18,,0.1005,0.6299,low,segment_level,
+s_e5764dd351,Not Interested,19-20,11-12,17-18,14.0,0.1148,0.6455,med,segment_level,2026-10-01T19:00:00
+s_cb088a584a,Not Answered,19-20,11-12,9-10,0.0,0.1129,0.656,low,segment_level,2026-10-01T19:00:00
+s_95ae692485,General,19-20,11-12,9-10,5.0,0.1522,0.6515,med,segment_level,2026-10-01T19:00:00
+s_b14af044ad,Not Interested,19-20,11-12,17-18,14.0,0.1959,0.6489,med,segment_level,2026-10-01T19:00:00
+s_8d9c337999,Not Interested,19-20,11-12,17-18,14.0,0.0455,0.5705,med,segment_level,2026-10-01T19:00:00
+s_25e9d94a5d,Not Interested,19-20,11-12,17-18,14.0,0.0661,0.6096,med,segment_level,2026-10-01T19:00:00
+s_5d004bcea5,General,19-20,17-18,9-10,5.0,0.0965,0.6238,med,segment_level,2026-10-01T19:00:00
+s_bce1b8918e,General,19-20,11-12,17-18,5.0,0.215,0.6907,med,segment_level,2026-10-01T19:00:00
+s_69483c5a0a,General,19-20,11-12,17-18,5.0,0.0774,0.6628,med,segment_level,2026-10-01T19:00:00
+s_8171a617f0,General,19-20,11-12,17-18,5.0,0.1345,0.6545,low,global_curve,2026-10-04T19:00:00
+s_7857a0ca98,Not Interested,19-20,11-12,17-18,14.0,0.1898,0.6802,med,segment_level,2026-10-01T19:00:00
+s_f68e8184b0,General,19-20,11-12,17-18,5.0,0.0806,0.5882,low,segment_level,2026-10-01T19:00:00
+s_3de9d0c646,Not Answered,19-20,11-12,17-18,0.0,0.048,0.569,med,segment_level,2026-10-01T19:00:00
+s_b2486dfae1,Not Interested,19-20,11-12,17-18,14.0,0.0745,0.6182,med,segment_level,2026-10-01T19:00:00
+s_169a64a1a3,Call Later,19-20,11-12,17-18,0.0,0.5029,0.6945,med,segment_level,2026-10-01T19:00:00
+s_9f03e651b4,Not Answered,19-20,11-12,17-18,0.0,0.0747,0.6273,med,segment_level,2026-10-01T19:00:00
+s_bc8aa2e51b,General,19-20,11-12,17-18,5.0,0.0862,0.6752,med,segment_level,2026-10-01T19:00:00
+s_1e018dea8e,Not Interested,19-20,11-12,17-18,14.0,0.0866,0.6313,med,segment_level,2026-10-01T19:00:00
+s_ed0100b4ab,General,19-20,11-12,17-18,5.0,0.0817,0.6073,low,segment_level,2026-10-01T19:00:00
+s_71e0c3a4a3,Call Later,19-20,11-12,17-18,0.0,0.0758,0.5979,low,segment_level,2026-10-01T19:00:00
+s_e3fe1030b4,Not Answered,19-20,11-12,17-18,0.0,0.098,0.6166,med,segment_level,2026-10-01T19:00:00
+s_de29b48016,Not Interested,19-20,11-12,17-18,14.0,0.0985,0.6494,med,segment_level,2026-10-03T19:00:00
+s_f0e8cd3589,Meeting Fixed,13-14,19-20,11-12,,0.1385,0.7306,med,segment_level,
+s_a75ecff311,General,19-20,11-12,17-18,5.0,0.052,0.5685,med,segment_level,2026-10-01T19:00:00
+s_09bedcc7db,Call Later,19-20,17-18,9-10,0.0,0.0541,0.644,med,segment_level,2026-10-01T19:00:00
+s_af42655237,Not Interested,19-20,11-12,17-18,14.0,0.1585,0.6687,med,segment_level,2026-10-01T19:00:00
+s_76f98b108b,General,19-20,11-12,17-18,5.0,0.1786,0.6588,high,segment_level,2026-10-01T19:00:00
+s_2164d823ff,Meeting Fixed,11-12,19-20,17-18,,0.4692,0.81,med,segment_level,
+s_2994650cda,Meeting Fixed,19-20,11-12,17-18,,0.0563,0.6504,high,segment_level,
+s_ab3802fca2,Not Interested,19-20,17-18,9-10,14.0,0.0734,0.6747,med,segment_level,2026-10-01T19:00:00
+s_5a4c8b54d9,Not Answered,19-20,11-12,17-18,0.0,0.3064,0.7107,low,segment_level,2026-10-01T19:00:00
+s_15b0750dee,Not Answered,19-20,17-18,9-10,0.0,0.0851,0.6015,low,segment_level,2026-10-01T19:00:00
+s_238371e0a3,Not Interested,19-20,11-12,17-18,14.0,0.0766,0.6028,med,segment_level,2026-10-01T19:00:00
+s_128ce513c7,Meeting Fixed,19-20,11-12,17-18,,0.1093,0.6863,low,segment_level,
+s_b000becb3c,General,19-20,11-12,17-18,5.0,0.1355,0.6508,low,global_curve,2026-10-01T19:00:00
+s_ec449f85d4,Meeting Fixed,19-20,11-12,17-18,,0.3493,0.6914,low,segment_level,
+s_30b29f9bf9,General,19-20,11-12,17-18,5.0,0.0639,0.5811,med,segment_level,2026-10-02T19:00:00
+s_bb45928d9b,Meeting Fixed,19-20,11-12,17-18,,0.1742,0.7018,med,segment_level,
+s_fecb8f0e58,Call Later,19-20,11-12,17-18,0.0,0.1256,0.6271,low,global_curve,2026-10-01T19:00:00
+s_e9a27039c6,Not Interested,19-20,11-12,17-18,14.0,0.0858,0.5947,med,segment_level,2026-10-01T19:00:00
+s_1bcfad0f3c,Not Answered,19-20,11-12,17-18,0.0,0.1114,0.6312,low,segment_level,2026-10-01T19:00:00
+s_251451d1a7,Not Answered,19-20,11-12,17-18,0.0,0.1502,0.5918,low,segment_level,2026-10-01T19:00:00
+s_f7694aa01b,General,19-20,11-12,17-18,5.0,0.0632,0.6781,med,segment_level,2026-10-05T19:00:00
+s_dca2e1a626,General,19-20,11-12,17-18,5.0,0.0813,0.5757,med,segment_level,2026-10-01T19:00:00
+s_ba45e2bcea,Call Later,19-20,11-12,17-18,0.0,0.1209,0.6355,high,global_curve,2026-10-01T19:00:00
+s_908bc606f5,Call Later,19-20,11-12,17-18,0.0,0.0852,0.6186,med,segment_level,2026-10-01T19:00:00
+s_9fd2aa5702,Meeting Fixed,13-14,19-20,11-12,,0.3577,0.7399,med,segment_level,
+s_74733c6578,Not Interested,19-20,11-12,17-18,14.0,0.0841,0.62,med,segment_level,2026-10-01T19:00:00
+s_6d0f61a93d,General,19-20,11-12,17-18,5.0,0.1763,0.6352,med,segment_level,2026-10-01T19:00:00
+s_3ff385016d,Call Later,11-12,17-18,9-10,0.0,0.0971,0.6133,low,segment_level,2026-10-01T11:00:00
+s_1f3a5cabfb,Not Answered,11-12,17-18,9-10,0.0,0.061,0.5924,low,segment_level,2026-10-01T11:00:00
+s_ee1473ef2b,Not Interested,19-20,11-12,17-18,14.0,0.1864,0.6607,med,segment_level,2026-10-01T19:00:00
+s_44fc4c5077,Not Answered,19-20,11-12,17-18,0.0,0.1293,0.6419,low,global_curve,2026-10-01T19:00:00
+s_bc3d58ffbe,General,19-20,11-12,17-18,5.0,0.3117,0.6883,low,segment_level,2026-10-02T19:00:00
+s_9f893a6ad1,General,19-20,11-12,17-18,5.0,0.0589,0.5653,low,segment_level,2026-10-05T19:00:00
+s_dda134966a,Not Interested,19-20,17-18,9-10,14.0,0.1036,0.6258,med,segment_level,2026-10-01T19:00:00
+s_7d8651221b,Not Interested,19-20,11-12,17-18,14.0,0.0483,0.6118,med,segment_level,2026-10-01T19:00:00
+s_09b3a1b0fb,Meeting Fixed,11-12,19-20,17-18,,0.158,0.75,med,segment_level,
+s_1dba89f322,Call Later,19-20,11-12,17-18,0.0,0.0709,0.4814,med,segment_level,2026-10-01T19:00:00
+s_f9f9e5786b,Not Interested,19-20,11-12,17-18,14.0,0.0835,0.6271,med,segment_level,2026-10-01T19:00:00
+s_d015966cf0,Call Later,19-20,11-12,17-18,0.0,0.0589,0.6195,low,segment_level,2026-10-01T19:00:00
+s_e373383563,Not Interested,19-20,11-12,17-18,14.0,0.1335,0.6754,med,global_curve,2026-10-01T19:00:00
+s_cb8dbc150a,Not Answered,19-20,11-12,17-18,0.0,0.0938,0.6662,med,segment_level,2026-10-01T19:00:00
+s_99267cdd2b,Call Later,19-20,11-12,17-18,0.0,0.1766,0.6736,med,segment_level,2026-10-01T19:00:00
+s_f10d790c62,Not Answered,19-20,11-12,17-18,0.0,0.1853,0.619,med,segment_level,2026-10-01T19:00:00
+s_6078316495,Not Interested,19-20,11-12,17-18,14.0,0.2028,0.6744,med,segment_level,2026-10-01T19:00:00
+s_acd3e30fdd,Meeting Fixed,19-20,11-12,17-18,,0.1001,0.6327,low,segment_level,
+s_6c5bb542cc,Not Answered,19-20,11-12,9-10,0.0,0.0963,0.6366,low,segment_level,2026-10-01T19:00:00
+s_c8765aef9f,Not Answered,19-20,17-18,9-10,0.0,0.1372,0.652,low,global_curve,2026-10-01T19:00:00
+s_9ba8f717ba,Not Interested,19-20,11-12,17-18,14.0,0.0975,0.6008,med,segment_level,2026-10-01T19:00:00
+s_f90cbe4199,Not Answered,19-20,11-12,17-18,0.0,0.1335,0.6754,low,global_curve,2026-10-01T19:00:00
+s_e4ed935d69,General,19-20,11-12,17-18,5.0,0.1079,0.5916,med,segment_level,2026-10-01T19:00:00
+s_a1d4d5e60d,General,19-20,11-12,17-18,5.0,0.1496,0.6157,med,segment_level,2026-10-01T19:00:00
+s_21f5224c52,General,19-20,11-12,17-18,5.0,0.0611,0.6081,low,segment_level,2026-10-03T19:00:00
+s_0534b2753f,General,19-20,11-12,9-10,5.0,0.1479,0.6251,med,segment_level,2026-10-01T19:00:00
+s_665c2c6137,General,19-20,11-12,9-10,5.0,0.276,0.6801,med,segment_level,2026-10-01T19:00:00
+s_c0801bf806,Meeting Fixed,19-20,11-12,17-18,,0.0674,0.6199,low,segment_level,
+s_e579b1b90b,General,19-20,11-12,17-18,5.0,0.0975,0.631,low,segment_level,2026-10-03T19:00:00
+s_66e505b073,Meeting Fixed,19-20,11-12,17-18,,0.4029,0.7109,med,segment_level,
+s_9623f8d29a,General,19-20,11-12,17-18,5.0,0.0857,0.6167,med,segment_level,2026-10-01T19:00:00
+s_f6e40d8146,General,19-20,11-12,17-18,5.0,0.1989,0.6318,med,segment_level,2026-10-01T19:00:00
+s_15e83fc2ae,Not Interested,19-20,11-12,17-18,14.0,0.1465,0.687,med,segment_level,2026-10-01T19:00:00
+s_de03c404e8,Meeting Fixed,19-20,11-12,17-18,,0.1689,0.6607,med,segment_level,
+s_5cf77110b0,Meeting Fixed,19-20,11-12,9-10,,0.2727,0.6776,med,segment_level,
+s_2a6dbbf937,Not Interested,19-20,11-12,17-18,14.0,0.1122,0.6571,high,segment_level,2026-10-01T19:00:00
+s_2aaea29ab1,Call Later,19-20,11-12,17-18,0.0,0.1573,0.6578,low,segment_level,2026-10-01T19:00:00
+s_3d99c5af53,Meeting Fixed,15-16,19-20,11-12,,0.3459,0.8,med,segment_level,
+s_6e3b5fdaed,Not Answered,19-20,11-12,17-18,0.0,0.1023,0.6498,med,segment_level,2026-10-01T19:00:00
+s_79c3936a82,Not Answered,19-20,11-12,17-18,0.0,0.0612,0.6288,low,segment_level,2026-10-01T19:00:00
+s_f291238dab,Not Interested,19-20,11-12,17-18,14.0,0.1048,0.5979,med,segment_level,2026-10-01T19:00:00
+s_751756e8d0,General,19-20,11-12,17-18,5.0,0.0941,0.5934,med,segment_level,2026-10-01T19:00:00
+s_0cd88344fb,Call Later,19-20,11-12,17-18,0.0,0.1189,0.6915,low,global_curve,2026-10-01T19:00:00
+s_3485940e6e,General,19-20,11-12,17-18,5.0,0.2918,0.6533,med,segment_level,2026-10-01T19:00:00
+s_43b7cacbdc,Call Later,19-20,11-12,9-10,0.0,0.0681,0.6122,high,segment_level,2026-10-01T19:00:00
+s_e15452dade,Call Later,19-20,11-12,17-18,0.0,0.1113,0.6043,med,segment_level,2026-10-01T19:00:00
+s_213d6ef4a9,Not Interested,19-20,11-12,17-18,14.0,0.0906,0.5688,med,segment_level,2026-10-01T19:00:00
+s_ad12a92825,Not Answered,19-20,11-12,17-18,0.0,0.1208,0.5519,med,global_curve,2026-10-01T19:00:00
+s_b4bcb946c7,Not Interested,19-20,11-12,17-18,14.0,0.1838,0.6778,med,segment_level,2026-10-01T19:00:00
+s_25ca42061c,Not Interested,19-20,11-12,17-18,14.0,0.1011,0.6281,med,segment_level,2026-10-01T19:00:00
+s_b689df4045,Not Answered,19-20,11-12,17-18,0.0,0.0467,0.6124,low,segment_level,2026-10-01T19:00:00
+s_cc5deb53ff,Not Interested,19-20,11-12,17-18,14.0,0.0756,0.5602,med,segment_level,2026-10-01T19:00:00
+s_61eaf85f6d,Not Interested,11-12,17-18,9-10,14.0,0.0713,0.6023,med,segment_level,2026-10-01T11:00:00
+s_ec0cfb3114,Not Interested,19-20,11-12,9-10,14.0,0.0429,0.6068,med,segment_level,2026-10-01T19:00:00
+s_6409f653ca,General,19-20,11-12,17-18,5.0,0.0932,0.6583,low,segment_level,2026-10-01T19:00:00
+s_b24d4cd62d,Not Answered,19-20,11-12,17-18,0.0,0.2956,0.6809,low,segment_level,2026-10-01T19:00:00
+s_a61c125037,Not Interested,19-20,17-18,9-10,14.0,0.2712,0.686,med,segment_level,2026-10-01T19:00:00
+s_778514c7aa,Not Answered,19-20,11-12,17-18,0.0,0.1093,0.6863,low,segment_level,2026-10-01T19:00:00
+s_b1c4874664,Not Answered,19-20,11-12,17-18,0.0,0.0728,0.6147,high,segment_level,2026-10-01T19:00:00
+s_5e7ebb61bb,Not Interested,19-20,11-12,17-18,14.0,0.1555,0.6443,med,segment_level,2026-10-01T19:00:00
+s_e9971ce04a,General,19-20,11-12,17-18,5.0,0.0851,0.5881,med,segment_level,2026-10-01T19:00:00
+s_fee46dc498,Not Answered,19-20,11-12,17-18,0.0,0.2178,0.6397,med,segment_level,2026-10-01T19:00:00
+s_e91f266b1b,Meeting Fixed,17-18,19-20,11-12,,0.1087,0.7229,med,segment_level,
+s_eb0c9e921e,General,19-20,11-12,17-18,5.0,0.1773,0.6347,med,segment_level,2026-10-01T19:00:00
+s_d97268b2af,Not Interested,19-20,11-12,17-18,14.0,0.0805,0.6389,med,segment_level,2026-10-01T19:00:00
+s_73c086a871,Call Later,19-20,11-12,17-18,0.0,0.1488,0.6666,med,segment_level,2026-10-01T19:00:00
+s_aa3d1979f8,Not Answered,19-20,11-12,17-18,0.0,0.2668,0.6882,low,segment_level,2026-10-01T19:00:00
+s_277ec7279c,Call Later,19-20,11-12,17-18,0.0,0.06,0.6074,med,segment_level,2026-10-01T19:00:00
+s_8655a178b1,Meeting Fixed,19-20,11-12,17-18,,0.1417,0.6852,med,segment_level,
+s_94625627de,General,19-20,11-12,17-18,5.0,0.0769,0.6482,low,segment_level,2026-10-05T19:00:00
+s_2e10728603,Not Answered,19-20,17-18,9-10,0.0,0.1123,0.6592,low,segment_level,2026-10-01T19:00:00
+s_d3488585f5,Not Interested,19-20,17-18,9-10,14.0,0.1042,0.6053,med,segment_level,2026-10-01T19:00:00
+s_12e6728c8f,Not Interested,19-20,11-12,17-18,14.0,0.0745,0.6293,med,segment_level,2026-10-01T19:00:00
+s_df8fd7fc19,Not Interested,19-20,11-12,17-18,14.0,0.124,0.6485,med,global_curve,2026-10-01T19:00:00
+s_f7d5b98ddd,Not Interested,19-20,11-12,17-18,14.0,0.0669,0.6207,med,segment_level,2026-10-01T19:00:00
+s_f9d5cd9523,General,19-20,11-12,17-18,5.0,0.0732,0.5954,low,segment_level,2026-10-01T19:00:00
+s_7d08435807,Not Interested,19-20,11-12,17-18,14.0,0.1523,0.6523,high,segment_level,2026-10-01T19:00:00
+s_1b532cc1e9,General,19-20,11-12,17-18,5.0,0.0692,0.5949,med,segment_level,2026-10-01T19:00:00
+s_e128a121da,Not Interested,19-20,11-12,17-18,14.0,0.0682,0.6118,med,segment_level,2026-10-01T19:00:00
+s_7861728edf,Not Answered,19-20,17-18,9-10,0.0,0.2307,0.6425,low,segment_level,2026-10-01T19:00:00
+s_4329860834,Not Answered,19-20,11-12,17-18,0.0,0.1495,0.6162,med,segment_level,2026-10-01T19:00:00
+s_e95545d001,Not Interested,19-20,11-12,17-18,14.0,0.0392,0.6009,high,segment_level,2026-10-01T19:00:00
+s_af57ee2902,Meeting Fixed,19-20,11-12,17-18,,0.0731,0.6168,low,segment_level,
+s_a547f3724c,Call Later,11-12,17-18,9-10,0.0,0.129,0.6244,med,global_curve,2026-10-01T11:00:00
+s_66ad80739e,Not Interested,19-20,11-12,17-18,14.0,0.0507,0.5811,med,segment_level,2026-10-01T19:00:00
+s_fbae4bfc0c,Not Answered,19-20,11-12,17-18,0.0,0.0589,0.6538,low,segment_level,2026-10-01T19:00:00
+s_bee20bcfd6,Not Interested,19-20,11-12,17-18,14.0,0.2166,0.6987,med,segment_level,2026-10-01T19:00:00
+s_f818f191b4,Not Answered,19-20,11-12,17-18,0.0,0.0954,0.6343,med,segment_level,2026-10-01T19:00:00
+s_f3990a7b39,Meeting Fixed,19-20,11-12,17-18,,0.2617,0.7714,med,segment_level,
+s_7d63143f80,Call Later,19-20,11-12,9-10,0.0,0.2099,0.7139,med,segment_level,2026-10-01T19:00:00
+s_3f72203dd3,Not Answered,19-20,11-12,17-18,0.0,0.1817,0.6728,low,segment_level,2026-10-01T19:00:00
+s_5b36529e4d,Not Answered,19-20,11-12,17-18,0.0,0.0612,0.6641,low,segment_level,2026-10-01T19:00:00
+s_c9dc45bd3b,Meeting Fixed,19-20,11-12,17-18,,0.1799,0.646,low,segment_level,
+s_6bcaa75732,General,19-20,11-12,9-10,5.0,0.1677,0.6672,med,segment_level,2026-10-01T19:00:00
+s_ab168c03fb,General,19-20,11-12,17-18,5.0,0.2575,0.6505,low,segment_level,2026-10-01T19:00:00
+s_75006ee9d9,General,19-20,17-18,9-10,5.0,0.0713,0.6559,med,segment_level,2026-10-01T19:00:00
+s_3c871b524a,General,19-20,11-12,17-18,5.0,0.1795,0.6199,med,segment_level,2026-10-01T19:00:00
+s_83faf59e54,Not Interested,19-20,11-12,17-18,14.0,0.1107,0.6903,med,segment_level,2026-10-01T19:00:00
+s_7bab3515b5,Call Later,19-20,11-12,17-18,0.0,0.0854,0.6289,low,segment_level,2026-10-01T19:00:00
+s_1f4156036a,Not Answered,19-20,11-12,17-18,0.0,0.0687,0.6469,low,segment_level,2026-10-01T19:00:00

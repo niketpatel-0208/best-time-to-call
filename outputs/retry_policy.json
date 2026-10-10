@@ -1,0 +1,1849 @@
+{
+  "meta": {
+    "built_on": "Apr-Aug 2026 (September held out)",
+    "n_transitions": 162373,
+    "primary_target": "meeting",
+    "strata": "bucket group x bot x month",
+    "ci_method": "Wilson 95% per cell; MH risk ratio within strata",
+    "bands": [
+      "9-10",
+      "11-12",
+      "13-14",
+      "15-16",
+      "17-18",
+      "19-20"
+    ]
+  },
+  "states": {
+    "fresh_first_attempt": {
+      "action": "call_now",
+      "rule": "Fresh first attempt (attempt 1, delay_min <= 5): call immediately, no band change.",
+      "defer_to_band": null,
+      "source": "immediate"
+    },
+    "not_answered": {
+      "after_missed_call": {
+        "action": "shift_daypart",
+        "rule": "Move the next call to a different daypart (+4-8h, or next day), preferring 17-20; never retry in the same hour."
+      },
+      "attempt_cap": 4,
+      "decision_table": [
+        {
+          "attempt_no": 1,
+          "failed_band": "9-10",
+          "n_failed": 15637,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "11-12",
+            "n": 478,
+            "answer_rate": 0.4435,
+            "meeting_rate": 0.0753,
+            "meeting_ci": [
+              0.0549,
+              0.1025
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.449,
+          "mh_meeting_rr_ci": [
+            1.01,
+            1.934
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "9-10",
+              "n": 10092,
+              "answer_rate": 0.3677,
+              "meeting_rate": 0.0521,
+              "meeting_ci": [
+                0.048,
+                0.0566
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "11-12",
+              "n": 3724,
+              "answer_rate": 0.3832,
+              "meeting_rate": 0.0561,
+              "meeting_ci": [
+                0.0492,
+                0.064
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "13-14",
+              "n": 513,
+              "answer_rate": 0.3938,
+              "meeting_rate": 0.0507,
+              "meeting_ci": [
+                0.0348,
+                0.0732
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "11-12",
+              "n": 478,
+              "answer_rate": 0.4435,
+              "meeting_rate": 0.0753,
+              "meeting_ci": [
+                0.0549,
+                0.1025
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "13-14",
+              "n": 384,
+              "answer_rate": 0.4714,
+              "meeting_rate": 0.0521,
+              "meeting_ci": [
+                0.034,
+                0.0791
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 335,
+              "answer_rate": 0.394,
+              "meeting_rate": 0.0388,
+              "meeting_ci": [
+                0.0228,
+                0.0653
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 1,
+          "failed_band": "11-12",
+          "n_failed": 5051,
+          "recommended": {
+            "gap_bucket": "45m-2h",
+            "next_band": "13-14",
+            "n": 3286,
+            "answer_rate": 0.3539,
+            "meeting_rate": 0.0484,
+            "meeting_ci": [
+              0.0416,
+              0.0563
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.069,
+          "mh_meeting_rr_ci": [
+            0.798,
+            1.424
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "13-14",
+              "n": 3286,
+              "answer_rate": 0.3539,
+              "meeting_rate": 0.0484,
+              "meeting_ci": [
+                0.0416,
+                0.0563
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "11-12",
+              "n": 1384,
+              "answer_rate": 0.3743,
+              "meeting_rate": 0.0448,
+              "meeting_ci": [
+                0.0351,
+                0.057
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "13-14",
+              "n": 233,
+              "answer_rate": 0.4549,
+              "meeting_rate": 0.0472,
+              "meeting_ci": [
+                0.0266,
+                0.0825
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "13-14",
+              "n": 45,
+              "answer_rate": 0.1778,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.0787
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "17-18",
+              "n": 40,
+              "answer_rate": 0.525,
+              "meeting_rate": 0.05,
+              "meeting_ci": [
+                0.0138,
+                0.165
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "15-16",
+              "n": 24,
+              "answer_rate": 0.5,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.138
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 1,
+          "failed_band": "13-14",
+          "n_failed": 12724,
+          "recommended": {
+            "gap_bucket": "45m-2h",
+            "next_band": "15-16",
+            "n": 8170,
+            "answer_rate": 0.3634,
+            "meeting_rate": 0.043,
+            "meeting_ci": [
+              0.0388,
+              0.0476
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 0.936,
+          "mh_meeting_rr_ci": [
+            0.81,
+            1.106
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "15-16",
+              "n": 8170,
+              "answer_rate": 0.3634,
+              "meeting_rate": 0.043,
+              "meeting_ci": [
+                0.0388,
+                0.0476
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "13-14",
+              "n": 4089,
+              "answer_rate": 0.3651,
+              "meeting_rate": 0.0462,
+              "meeting_ci": [
+                0.0402,
+                0.0531
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "15-16",
+              "n": 158,
+              "answer_rate": 0.443,
+              "meeting_rate": 0.0253,
+              "meeting_ci": [
+                0.0099,
+                0.0633
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "15-16",
+              "n": 128,
+              "answer_rate": 0.4531,
+              "meeting_rate": 0.0547,
+              "meeting_ci": [
+                0.0267,
+                0.1086
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "13-14",
+              "n": 67,
+              "answer_rate": 0.3881,
+              "meeting_rate": 0.0448,
+              "meeting_ci": [
+                0.0153,
+                0.1236
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "17-18",
+              "n": 61,
+              "answer_rate": 0.4426,
+              "meeting_rate": 0.0492,
+              "meeting_ci": [
+                0.0169,
+                0.1349
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 1,
+          "failed_band": "15-16",
+          "n_failed": 13497,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "17-18",
+            "n": 278,
+            "answer_rate": 0.4209,
+            "meeting_rate": 0.0719,
+            "meeting_ci": [
+              0.0471,
+              0.1085
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.421,
+          "mh_meeting_rr_ci": [
+            0.901,
+            1.987
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "17-18",
+              "n": 7378,
+              "answer_rate": 0.3634,
+              "meeting_rate": 0.05,
+              "meeting_ci": [
+                0.0453,
+                0.0552
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "15-16",
+              "n": 5394,
+              "answer_rate": 0.3674,
+              "meeting_rate": 0.0452,
+              "meeting_ci": [
+                0.04,
+                0.0511
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "17-18",
+              "n": 278,
+              "answer_rate": 0.4209,
+              "meeting_rate": 0.0719,
+              "meeting_ci": [
+                0.0471,
+                0.1085
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "17-18",
+              "n": 148,
+              "answer_rate": 0.3919,
+              "meeting_rate": 0.0338,
+              "meeting_ci": [
+                0.0145,
+                0.0766
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "15-16",
+              "n": 135,
+              "answer_rate": 0.3556,
+              "meeting_rate": 0.0148,
+              "meeting_ci": [
+                0.0041,
+                0.0524
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "19-20",
+              "n": 70,
+              "answer_rate": 0.4143,
+              "meeting_rate": 0.0571,
+              "meeting_ci": [
+                0.0224,
+                0.1379
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 1,
+          "failed_band": "17-18",
+          "n_failed": 7265,
+          "recommended": {
+            "gap_bucket": "45m-2h",
+            "next_band": "19-20",
+            "n": 3533,
+            "answer_rate": 0.3728,
+            "meeting_rate": 0.0583,
+            "meeting_ci": [
+              0.051,
+              0.0665
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.002,
+          "mh_meeting_rr_ci": [
+            0.833,
+            1.211
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "19-20",
+              "n": 3533,
+              "answer_rate": 0.3728,
+              "meeting_rate": 0.0583,
+              "meeting_ci": [
+                0.051,
+                0.0665
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "17-18",
+              "n": 3376,
+              "answer_rate": 0.3747,
+              "meeting_rate": 0.0586,
+              "meeting_ci": [
+                0.0512,
+                0.0671
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "19-20",
+              "n": 121,
+              "answer_rate": 0.5207,
+              "meeting_rate": 0.0744,
+              "meeting_ci": [
+                0.0396,
+                0.1353
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "17-18",
+              "n": 93,
+              "answer_rate": 0.4194,
+              "meeting_rate": 0.043,
+              "meeting_ci": [
+                0.0169,
+                0.1054
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "19-20",
+              "n": 69,
+              "answer_rate": 0.3768,
+              "meeting_rate": 0.0435,
+              "meeting_ci": [
+                0.0149,
+                0.1202
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 47,
+              "answer_rate": 0.3191,
+              "meeting_rate": 0.0426,
+              "meeting_ci": [
+                0.0117,
+                0.1425
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 1,
+          "failed_band": "19-20",
+          "n_failed": 3779,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 1271,
+            "answer_rate": 0.3698,
+            "meeting_rate": 0.0622,
+            "meeting_ci": [
+              0.0502,
+              0.0768
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.034,
+          "mh_meeting_rr_ci": [
+            0.793,
+            1.359
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "19-20",
+              "n": 1816,
+              "answer_rate": 0.3981,
+              "meeting_rate": 0.0655,
+              "meeting_ci": [
+                0.055,
+                0.0779
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1271,
+              "answer_rate": 0.3698,
+              "meeting_rate": 0.0622,
+              "meeting_ci": [
+                0.0502,
+                0.0768
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 558,
+              "answer_rate": 0.3889,
+              "meeting_rate": 0.0412,
+              "meeting_ci": [
+                0.0276,
+                0.0611
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "19-20",
+              "n": 49,
+              "answer_rate": 0.4286,
+              "meeting_rate": 0.0408,
+              "meeting_ci": [
+                0.0113,
+                0.1371
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 40,
+              "answer_rate": 0.475,
+              "meeting_rate": 0.025,
+              "meeting_ci": [
+                0.0044,
+                0.1288
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 30,
+              "answer_rate": 0.4333,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.1135
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "9-10",
+          "n_failed": 8179,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "11-12",
+            "n": 4009,
+            "answer_rate": 0.3437,
+            "meeting_rate": 0.0424,
+            "meeting_ci": [
+              0.0366,
+              0.0491
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.117,
+          "mh_meeting_rr_ci": [
+            0.904,
+            1.402
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "11-12",
+              "n": 4009,
+              "answer_rate": 0.3437,
+              "meeting_rate": 0.0424,
+              "meeting_ci": [
+                0.0366,
+                0.0491
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "13-14",
+              "n": 2861,
+              "answer_rate": 0.3142,
+              "meeting_rate": 0.0357,
+              "meeting_ci": [
+                0.0295,
+                0.0431
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "11-12",
+              "n": 1157,
+              "answer_rate": 0.3768,
+              "meeting_rate": 0.0458,
+              "meeting_ci": [
+                0.0352,
+                0.0594
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "13-14",
+              "n": 46,
+              "answer_rate": 0.4565,
+              "meeting_rate": 0.0652,
+              "meeting_ci": [
+                0.0224,
+                0.175
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "15-16",
+              "n": 34,
+              "answer_rate": 0.2647,
+              "meeting_rate": 0.0588,
+              "meeting_ci": [
+                0.0163,
+                0.1909
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "17-18",
+              "n": 20,
+              "answer_rate": 0.55,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.1611
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "11-12",
+          "n_failed": 6364,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "13-14",
+            "n": 4561,
+            "answer_rate": 0.3594,
+            "meeting_rate": 0.0333,
+            "meeting_ci": [
+              0.0285,
+              0.0389
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 0.937,
+          "mh_meeting_rr_ci": [
+            0.678,
+            1.276
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "13-14",
+              "n": 4561,
+              "answer_rate": 0.3594,
+              "meeting_rate": 0.0333,
+              "meeting_ci": [
+                0.0285,
+                0.0389
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "13-14",
+              "n": 968,
+              "answer_rate": 0.3864,
+              "meeting_rate": 0.0289,
+              "meeting_ci": [
+                0.0201,
+                0.0415
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "15-16",
+              "n": 697,
+              "answer_rate": 0.3702,
+              "meeting_rate": 0.0273,
+              "meeting_ci": [
+                0.0175,
+                0.0422
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "17-18",
+              "n": 69,
+              "answer_rate": 0.4783,
+              "meeting_rate": 0.1159,
+              "meeting_ci": [
+                0.0599,
+                0.2125
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "15-16",
+              "n": 27,
+              "answer_rate": 0.4815,
+              "meeting_rate": 0.037,
+              "meeting_ci": [
+                0.0066,
+                0.1828
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "11-12",
+              "n": 10,
+              "answer_rate": 0.3,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.2775
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "13-14",
+          "n_failed": 6413,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "17-18",
+            "n": 805,
+            "answer_rate": 0.3019,
+            "meeting_rate": 0.0385,
+            "meeting_ci": [
+              0.0273,
+              0.0541
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.199,
+          "mh_meeting_rr_ci": [
+            0.809,
+            1.73
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "15-16",
+              "n": 4172,
+              "answer_rate": 0.3061,
+              "meeting_rate": 0.0319,
+              "meeting_ci": [
+                0.027,
+                0.0377
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "15-16",
+              "n": 1385,
+              "answer_rate": 0.2968,
+              "meeting_rate": 0.0238,
+              "meeting_ci": [
+                0.017,
+                0.0333
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "17-18",
+              "n": 805,
+              "answer_rate": 0.3019,
+              "meeting_rate": 0.0385,
+              "meeting_ci": [
+                0.0273,
+                0.0541
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "19-20",
+              "n": 34,
+              "answer_rate": 0.4706,
+              "meeting_rate": 0.0882,
+              "meeting_ci": [
+                0.0305,
+                0.2296
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "17-18",
+              "n": 10,
+              "answer_rate": 0.4,
+              "meeting_rate": 0.1,
+              "meeting_ci": [
+                0.0179,
+                0.4042
+              ]
+            },
+            {
+              "gap_bucket": ">2d",
+              "next_band": "13-14",
+              "n": 2,
+              "answer_rate": 0.5,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.6576
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "15-16",
+          "n_failed": 9603,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "19-20",
+            "n": 754,
+            "answer_rate": 0.2997,
+            "meeting_rate": 0.0398,
+            "meeting_ci": [
+              0.028,
+              0.0562
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.435,
+          "mh_meeting_rr_ci": [
+            0.933,
+            1.959
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "17-18",
+              "n": 6338,
+              "answer_rate": 0.2892,
+              "meeting_rate": 0.0297,
+              "meeting_ci": [
+                0.0258,
+                0.0341
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "17-18",
+              "n": 2404,
+              "answer_rate": 0.3203,
+              "meeting_rate": 0.0316,
+              "meeting_ci": [
+                0.0253,
+                0.0394
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "19-20",
+              "n": 754,
+              "answer_rate": 0.2997,
+              "meeting_rate": 0.0398,
+              "meeting_ci": [
+                0.028,
+                0.0562
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 52,
+              "answer_rate": 0.0962,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.0688
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 28,
+              "answer_rate": 0.2143,
+              "meeting_rate": 0.0714,
+              "meeting_ci": [
+                0.0198,
+                0.2265
+              ]
+            },
+            {
+              "gap_bucket": "4-8h",
+              "next_band": "19-20",
+              "n": 19,
+              "answer_rate": 0.3158,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.1682
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "17-18",
+          "n_failed": 8256,
+          "recommended": {
+            "gap_bucket": "2-4h",
+            "next_band": "19-20",
+            "n": 4295,
+            "answer_rate": 0.318,
+            "meeting_rate": 0.0352,
+            "meeting_ci": [
+              0.0301,
+              0.0411
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.021,
+          "mh_meeting_rr_ci": [
+            0.81,
+            1.265
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "19-20",
+              "n": 4295,
+              "answer_rate": 0.318,
+              "meeting_rate": 0.0352,
+              "meeting_ci": [
+                0.0301,
+                0.0411
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "19-20",
+              "n": 3079,
+              "answer_rate": 0.3449,
+              "meeting_rate": 0.0354,
+              "meeting_ci": [
+                0.0294,
+                0.0425
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 689,
+              "answer_rate": 0.2917,
+              "meeting_rate": 0.029,
+              "meeting_ci": [
+                0.0189,
+                0.0444
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 142,
+              "answer_rate": 0.3028,
+              "meeting_rate": 0.0141,
+              "meeting_ci": [
+                0.0039,
+                0.0499
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 35,
+              "answer_rate": 0.3429,
+              "meeting_rate": 0.0286,
+              "meeting_ci": [
+                0.0051,
+                0.1453
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 7,
+              "answer_rate": 0.5714,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.3543
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 2,
+          "failed_band": "19-20",
+          "n_failed": 4255,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 2477,
+            "answer_rate": 0.3125,
+            "meeting_rate": 0.0339,
+            "meeting_ci": [
+              0.0275,
+              0.0418
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.363,
+          "mh_meeting_rr_ci": [
+            0.988,
+            1.936
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 2477,
+              "answer_rate": 0.3125,
+              "meeting_rate": 0.0339,
+              "meeting_ci": [
+                0.0275,
+                0.0418
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 1517,
+              "answer_rate": 0.3368,
+              "meeting_rate": 0.027,
+              "meeting_ci": [
+                0.02,
+                0.0365
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 90,
+              "answer_rate": 0.5111,
+              "meeting_rate": 0.0222,
+              "meeting_ci": [
+                0.0061,
+                0.0774
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 77,
+              "answer_rate": 0.2078,
+              "meeting_rate": 0.026,
+              "meeting_ci": [
+                0.0072,
+                0.0898
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "11-12",
+              "n": 72,
+              "answer_rate": 0.3194,
+              "meeting_rate": 0.0139,
+              "meeting_ci": [
+                0.0025,
+                0.0746
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "15-16",
+              "n": 18,
+              "answer_rate": 0.3889,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.1759
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "9-10",
+          "n_failed": 1893,
+          "recommended": {
+            "gap_bucket": "1-2d",
+            "next_band": "11-12",
+            "n": 893,
+            "answer_rate": 0.2699,
+            "meeting_rate": 0.028,
+            "meeting_ci": [
+              0.019,
+              0.041
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.093,
+          "mh_meeting_rr_ci": [
+            0.613,
+            2.013
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "11-12",
+              "n": 893,
+              "answer_rate": 0.2699,
+              "meeting_rate": 0.028,
+              "meeting_ci": [
+                0.019,
+                0.041
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 536,
+              "answer_rate": 0.2481,
+              "meeting_rate": 0.0299,
+              "meeting_ci": [
+                0.0185,
+                0.0479
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 380,
+              "answer_rate": 0.2184,
+              "meeting_rate": 0.0289,
+              "meeting_ci": [
+                0.0162,
+                0.0511
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "13-14",
+              "n": 52,
+              "answer_rate": 0.2885,
+              "meeting_rate": 0.0192,
+              "meeting_ci": [
+                0.0034,
+                0.1012
+              ]
+            },
+            {
+              "gap_bucket": "45m-2h",
+              "next_band": "11-12",
+              "n": 15,
+              "answer_rate": 0.1333,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.2039
+              ]
+            },
+            {
+              "gap_bucket": "2-4h",
+              "next_band": "11-12",
+              "n": 4,
+              "answer_rate": 0.25,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.4899
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "11-12",
+          "n_failed": 4234,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 1734,
+            "answer_rate": 0.2526,
+            "meeting_rate": 0.0283,
+            "meeting_ci": [
+              0.0214,
+              0.0372
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 0.831,
+          "mh_meeting_rr_ci": [
+            0.584,
+            1.199
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1734,
+              "answer_rate": 0.2526,
+              "meeting_rate": 0.0283,
+              "meeting_ci": [
+                0.0214,
+                0.0372
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 1719,
+              "answer_rate": 0.3543,
+              "meeting_rate": 0.0337,
+              "meeting_ci": [
+                0.0262,
+                0.0434
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "11-12",
+              "n": 645,
+              "answer_rate": 0.3256,
+              "meeting_rate": 0.0171,
+              "meeting_ci": [
+                0.0095,
+                0.0303
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "13-14",
+              "n": 81,
+              "answer_rate": 0.4815,
+              "meeting_rate": 0.0247,
+              "meeting_ci": [
+                0.0068,
+                0.0856
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 13,
+              "answer_rate": 0.4615,
+              "meeting_rate": 0.0769,
+              "meeting_ci": [
+                0.0137,
+                0.3331
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "17-18",
+              "n": 7,
+              "answer_rate": 0.2857,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.3543
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "13-14",
+          "n_failed": 4779,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "11-12",
+            "n": 2681,
+            "answer_rate": 0.2686,
+            "meeting_rate": 0.0269,
+            "meeting_ci": [
+              0.0214,
+              0.0337
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 0.994,
+          "mh_meeting_rr_ci": [
+            0.68,
+            1.418
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 2681,
+              "answer_rate": 0.2686,
+              "meeting_rate": 0.0269,
+              "meeting_ci": [
+                0.0214,
+                0.0337
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1791,
+              "answer_rate": 0.2786,
+              "meeting_rate": 0.0274,
+              "meeting_ci": [
+                0.0208,
+                0.036
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 166,
+              "answer_rate": 0.3012,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.0226
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "13-14",
+              "n": 66,
+              "answer_rate": 0.303,
+              "meeting_rate": 0.0303,
+              "meeting_ci": [
+                0.0083,
+                0.1039
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 28,
+              "answer_rate": 0.25,
+              "meeting_rate": 0.0357,
+              "meeting_ci": [
+                0.0063,
+                0.1771
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "15-16",
+              "n": 25,
+              "answer_rate": 0.4,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.1332
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "15-16",
+          "n_failed": 3618,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 1371,
+            "answer_rate": 0.2735,
+            "meeting_rate": 0.0394,
+            "meeting_ci": [
+              0.0303,
+              0.051
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 2.191,
+          "mh_meeting_rr_ci": [
+            1.476,
+            3.52
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 1908,
+              "answer_rate": 0.26,
+              "meeting_rate": 0.0189,
+              "meeting_ci": [
+                0.0137,
+                0.026
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1371,
+              "answer_rate": 0.2735,
+              "meeting_rate": 0.0394,
+              "meeting_ci": [
+                0.0303,
+                0.051
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 240,
+              "answer_rate": 0.2792,
+              "meeting_rate": 0.0292,
+              "meeting_ci": [
+                0.0142,
+                0.059
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "15-16",
+              "n": 40,
+              "answer_rate": 0.2,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.0876
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 26,
+              "answer_rate": 0.1154,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.1287
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "15-16",
+              "n": 13,
+              "answer_rate": 0.2308,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.2281
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "17-18",
+          "n_failed": 5296,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 1896,
+            "answer_rate": 0.2247,
+            "meeting_rate": 0.028,
+            "meeting_ci": [
+              0.0214,
+              0.0364
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.404,
+          "mh_meeting_rr_ci": [
+            0.996,
+            2.1
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 2900,
+              "answer_rate": 0.2469,
+              "meeting_rate": 0.0221,
+              "meeting_ci": [
+                0.0173,
+                0.0281
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1896,
+              "answer_rate": 0.2247,
+              "meeting_rate": 0.028,
+              "meeting_ci": [
+                0.0214,
+                0.0364
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 436,
+              "answer_rate": 0.1881,
+              "meeting_rate": 0.0161,
+              "meeting_ci": [
+                0.0078,
+                0.0328
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "15-16",
+              "n": 39,
+              "answer_rate": 0.1282,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.0897
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 19,
+              "answer_rate": 0.1579,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.1682
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "17-18",
+              "n": 2,
+              "answer_rate": 0.0,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.6576
+              ]
+            }
+          ]
+        },
+        {
+          "attempt_no": 3,
+          "failed_band": "19-20",
+          "n_failed": 4075,
+          "recommended": {
+            "gap_bucket": "8-24h",
+            "next_band": "9-10",
+            "n": 1524,
+            "answer_rate": 0.1988,
+            "meeting_rate": 0.0308,
+            "meeting_ci": [
+              0.0233,
+              0.0408
+            ]
+          },
+          "mh_meeting_rr_vs_rest": 1.454,
+          "mh_meeting_rr_ci": [
+            0.947,
+            2.137
+          ],
+          "top_cells": [
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "11-12",
+              "n": 2294,
+              "answer_rate": 0.2228,
+              "meeting_rate": 0.0231,
+              "meeting_ci": [
+                0.0177,
+                0.0301
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "9-10",
+              "n": 1524,
+              "answer_rate": 0.1988,
+              "meeting_rate": 0.0308,
+              "meeting_ci": [
+                0.0233,
+                0.0408
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "13-14",
+              "n": 209,
+              "answer_rate": 0.2344,
+              "meeting_rate": 0.0431,
+              "meeting_ci": [
+                0.0228,
+                0.0798
+              ]
+            },
+            {
+              "gap_bucket": "8-24h",
+              "next_band": "15-16",
+              "n": 20,
+              "answer_rate": 0.1,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                -0.0,
+                0.1611
+              ]
+            },
+            {
+              "gap_bucket": "1-2d",
+              "next_band": "9-10",
+              "n": 12,
+              "answer_rate": 0.1667,
+              "meeting_rate": 0.0833,
+              "meeting_ci": [
+                0.0149,
+                0.3539
+              ]
+            },
+            {
+              "gap_bucket": ">2d",
+              "next_band": "9-10",
+              "n": 6,
+              "answer_rate": 0.1667,
+              "meeting_rate": 0.0,
+              "meeting_ci": [
+                0.0,
+                0.3903
+              ]
+            }
+          ]
+        }
+      ],
+      "marginal_gap_meeting_rate": {
+        "<=15m": {
+          "n": 761,
+          "rate": 0.0026
+        },
+        "15-45m": {
+          "n": 86,
+          "rate": 0.0
+        },
+        "45m-2h": {
+          "n": 61333,
+          "rate": 0.0478
+        },
+        "2-4h": {
+          "n": 30414,
+          "rate": 0.0359
+        },
+        "4-8h": {
+          "n": 810,
+          "rate": 0.0593
+        },
+        "8-24h": {
+          "n": 47465,
+          "rate": 0.0232
+        },
+        "1-2d": {
+          "n": 21398,
+          "rate": 0.0172
+        },
+        ">2d": {
+          "n": 106,
+          "rate": 0.0283
+        }
+      },
+      "marginal_gap_answer_rate": {
+        "<=15m": {
+          "n": 761,
+          "rate": 0.1196
+        },
+        "15-45m": {
+          "n": 86,
+          "rate": 0.093
+        },
+        "45m-2h": {
+          "n": 61333,
+          "rate": 0.364
+        },
+        "2-4h": {
+          "n": 30414,
+          "rate": 0.3271
+        },
+        "4-8h": {
+          "n": 810,
+          "rate": 0.4568
+        },
+        "8-24h": {
+          "n": 47465,
+          "rate": 0.2575
+        },
+        "1-2d": {
+          "n": 21398,
+          "rate": 0.2393
+        },
+        ">2d": {
+          "n": 106,
+          "rate": 0.3208
+        }
+      },
+      "same_vs_different_band": {
+        "same_band": {
+          "n": 61427,
+          "answer_rate": 0.2907,
+          "meeting_rate": 0.0304
+        },
+        "different_band": {
+          "n": 100946,
+          "answer_rate": 0.3196,
+          "meeting_rate": 0.0365
+        }
+      },
+      "source": "retry_policy"
+    },
+    "call_later": {
+      "action": "honour_stated_time",
+      "resolved_by": "callback_time_layer",
+      "rule": "Resolve the next call time through callback_time_layer: seller_stated -> seller_hint -> model_window. There is no default time in this state.",
+      "sources": [
+        "seller_stated",
+        "seller_hint",
+        "model_window"
+      ],
+      "max_callbacks": 3,
+      "then": "treat as General"
+    },
+    "general": {
+      "action": "wait_then_best_band",
+      "rule": "+3-7 days, in the seller best band.",
+      "gap_days": [
+        3,
+        7
+      ],
+      "source": "retry_policy"
+    },
+    "not_interested": {
+      "action": "long_wait",
+      "rule": "+14 days (minimum 7). Two NI in a row -> 30-day suppression.",
+      "gap_days": [
+        14,
+        30
+      ],
+      "source": "retry_policy"
+    },
+    "meeting_fixed": {
+      "action": "no_bot_call",
+      "rule": "No bot call.",
+      "source": "meeting_fixed"
+    }
+  },
+  "callback_time_layer": {
+    "description": "Ordered rules that turn the last call's callback-time extraction (callback-time-extraction) plus the seller's model bands into a next_call_at. Apply in order; the first rule that fires wins.",
+    "precedence": [
+      {
+        "order": 1,
+        "source": "do_not_call",
+        "when": "extraction.do_not_call is true, or the call outcome is Do Not Call",
+        "next_call_at": null,
+        "rule": "No next call."
+      },
+      {
+        "order": 2,
+        "source": "meeting_fixed",
+        "when": "the call outcome is Meeting Fixed",
+        "next_call_at": null,
+        "rule": "No bot call."
+      },
+      {
+        "order": 3,
+        "source": "seller_stated",
+        "when": "cue_strength is explicit, confidence >= 0.7, and callback_at is set",
+        "next_call_at": "callback_at (= the stated time - 5 min), clamped to 09:00-20:55 IST",
+        "rule": "Seller-stated times win."
+      },
+      {
+        "order": 4,
+        "source": "seller_hint",
+        "when": "an implicit cue: a window, or an earliest_date, or both",
+        "next_call_at": "the first of rec_band / backup_band_1 / backup_band_2 that overlaps the window on the hinted day (band start); earliest_date only -> the first rec_band slot on or after that date; both -> the window on earliest_date. If no band overlaps, use window_start.",
+        "rule": "Hints narrow the window."
+      },
+      {
+        "order": 5,
+        "source": "model_window",
+        "when": "Call Later with no usable cue (vague / none / confidence below threshold)",
+        "next_call_at": "same day, 1-6 h after call_time, at the first of rec_band / backup_band_1 / backup_band_2 that starts in that range; if none does, tomorrow's rec_band slot.",
+        "rule": "Never default to tomorrow 12:00."
+      },
+      {
+        "order": 6,
+        "source": "retry_policy",
+        "when": "Not Answered / General / Not Interested",
+        "next_call_at": "the NA / General / NI rules in states.*",
+        "rule": "Follow the retry policy for the outcome."
+      }
+    ],
+    "sources": [
+      "do_not_call",
+      "meeting_fixed",
+      "seller_stated",
+      "seller_hint",
+      "model_window",
+      "retry_policy"
+    ],
+    "constraints": {
+      "call_window": "model windows lie within 09:00-21:00 IST; a time the seller states is used as given",
+      "min_lead": "next_call_at is never earlier than call_time + 10 minutes",
+      "callback_cap": 3,
+      "callback_cap_action": "after 3 Call-Later callbacks in an episode, treat a further Call Later as General",
+      "fresh_leads": "fresh new hot leads are called immediately; this layer schedules follow-ups only"
+    },
+    "never": "Never default a Call Later callback to tomorrow 12:00."
+  },
+  "hot_lead_dispatch": {
+    "current": {
+      "rule": "After a hot lead is generated, the system waits 15 minutes before dispatching it to the vendor's dialer.",
+      "priority_fast_track": "High-priority hot leads (e.g. payment page opened) are dispatched immediately.",
+      "no_redial": "There is no 15-minute redial; the 15 minutes is a one-time dispatch wait, not a second dial after a failed one.",
+      "measurability": "lead_sent_time is the dispatch time, not the generation time. The hot-lead generation time is not in the data, so the wait cannot be measured directly."
+    },
+    "evidence": {
+      "freshness_curve": "Meeting rate on first attempts (Apr-Aug, n=162,070) falls monotonically with the dispatch-to-dial delay: 10.7% at <=30s (n=76,422) down to 7.7% at 30-60m (n=6,613).",
+      "share_fast": "47.5% of first attempts are dispatched within 30s; 73.7% within 5 minutes.",
+      "ref": "fifteen_minute_rule.md, chart_freshness.png"
+    },
+    "recommendation": "Change: test dispatching all hot leads immediately; keep the priority fast-track; keep the after-no-answer daypart shift.",
+    "ab_test": {
+      "unit": "hot lead",
+      "arms": [
+        "0 minutes (immediate)",
+        "5 minutes",
+        "15 minutes (current)"
+      ],
+      "held_constant": [
+        "priority fast-track",
+        "after-no-answer daypart shift"
+      ],
+      "primary_metric": "meetings fixed per dispatched hot lead",
+      "secondary": [
+        "connect rate",
+        "time-to-first-dial",
+        "calls per meeting"
+      ],
+      "guardrail": "vendor dial volume per hour",
+      "design": "two-sided, alpha 0.05, powered for a 5% lift; cluster-robust CI per seller"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Internal data: never commit
+data/*
+!data/README.md
+*.parquet
+*.pkl
+*.xlsx
+Best-Time-to-Call*.csv
+6761965_*.csv
+*callback_extractions*.csv
+callback_schedule.csv
+seller_windows.csv
+btc_cohort.csv
+btc_model_windows.md
+
+# Secrets and environment
+.env
+*.env
+*.key
+
+# Python / OS
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Large media (put videos in Google Drive)
+*.mp4
+*.mov
