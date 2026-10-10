@@ -1,6 +1,7 @@
 # Internal data: never commit
 data/*
 !data/README.md
+!data/data_dictionary.md
 *.parquet
 *.pkl
 *.xlsx
