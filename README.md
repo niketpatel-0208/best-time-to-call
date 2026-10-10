@@ -6,6 +6,8 @@ Built on **Sarvam**: Cowork agents for the analysis, and a Voice Agent that capt
 
 | | |
 |---|---|
+| Main agent | **BTC Analyst**, Sarvam Cowork (Indus): builds the timing model, retry rules, stop model and backtest |
+| LLM layer | **Callback Extractor**, Sarvam Cowork: reads the seller's callback time from call summaries |
 | Voice agent | **BTC Smart Callback**, Sarvam Voice Agents, agent ID `BTC-Smart-C-a066330b-9321` |
 | Build journey | [skills.md](skills.md) |
 
